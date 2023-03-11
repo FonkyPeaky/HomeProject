@@ -1,0 +1,133 @@
+devices:
+    common:
+    - /dev/gpiochip1
+    debug: []
+    release: []
+dockercomposefile:
+    common: ''
+    debug: ''
+    release: ''
+extraparms:
+    common: {}
+    debug: {}
+    release: {}
+id: eb209fb2-bf45-4035-beb7-c532e9b8ad8f
+images:
+    debug: sha256:ec05c083dfb54c4beacf4a62248e55247917baddd2672894d22d8c95a16a6dd7
+    release: ''
+imagetags:
+    debug: homeproject_arm32v7-dotnet-60_bullseye_debug_eb209fb2-bf45-4035-beb7-c532e9b8ad8f
+    release: homeproject_arm32v7-dotnet-60_bullseye_release_eb209fb2-bf45-4035-beb7-c532e9b8ad8f
+modificationdate: '2023-03-10T20:22:55.224748'
+networks:
+    common: []
+    debug: []
+    release: []
+platformid: arm32v7-dotnet-60_bullseye
+ports:
+    common: {}
+    debug: {}
+    release: {}
+privatekey: '-----BEGIN RSA PRIVATE KEY-----
+
+    MIIEowIBAAKCAQEAmrfXzNb9T3gOgseaS3bfVlJUJ2IPGTT60QHOuGZn0XlVF96T
+
+    PB2C2ft+95PBNPXIxB20buBeuZrdEZCs7gKor7urZ6FFR1pQ246mMbBwQHo4hcjQ
+
+    TQJZZIRgKC0qKqKuCbBIE0142EaSGsNMiZrogeleYbXwYW1uiUqJo3DfwQxhTJgQ
+
+    oz29nTwLCa1UiSPKoOuoq5ARVJg9WziP5PGPjmSFSfpqqF/MJwhjFSos7Md1ie44
+
+    ApVXEoQj6hrvRmXYNb7dcrn3Qs2nxLgy5lxb6n1dbhK57kcsW6OMs1rzoFVrjwIE
+
+    a/ffRhLiYyDN3V6EZIgfr76RqjYmnMySQj3f5wIDAQABAoIBABxCK9YsBkQ3h173
+
+    mgTih1Q64Uf4Lw3JkW4PSHSBr8Cgypv7eSTntvidaMlLYWSM58h6LHR74pE/6dTF
+
+    efBW5/yA6IOa/w5TPqV7XnuA4F/GcwBsdy85mJ41V2K/LQ5wfB0k52UvJz1JVnIw
+
+    7Y/MjV79AtIR6v/AfwnwZUdG3HdjxJal43E3I4UojlMq1D30FaIsTd8nr5tmKnRa
+
+    s0iVa1U8v7PrQz8pKc2QTVnyTIfiVDXImgCX0hqkIITpUqdQYehDbdC75Yi5cf9m
+
+    ikXbt6C9lECsuyEsYI4bKj1eGXy9gKv6zh2JI+YL9sbuC4NpyMj7h3pzUYWiQQB7
+
+    +45qt3ECgYEAuT8dTRmqygdZ3ZUS/86SQD+rICNKTpkzIQUMjNjEUGQ67pudvZ8k
+
+    LRIKhA+tCVNRWbqnZ9eZ04aEVC007NnLwNHYWglzwGyK2JDq1aBYXkQNKDWGiJ+Q
+
+    xmdYr3J5SPurv45dqzGFbCG+ihfXxMEuSMz/Jiz/i4Qkaj1g0zJr3/MCgYEA1c+/
+
+    Pg9mc4PU198Vnfu0qqAsYtFL512j3Nl2UUDF80UxkTEZquNpiiZw6Z+853+mhr3D
+
+    zVywbmgmaUXc6HJwkynJCma2yeEawgKO7AAfrSPz+NymHhqq5eE4rZeefmW4vaLk
+
+    uIVGJf7nz4cbpLB07EX1hjGLe3/FM0R+x5ukMT0CgYEArIBdZMKWC/O0d2aufo96
+
+    GWIwlIjIVVDMD9+HxFDG3qW3SyKWTVG4ek/mgvumAp0XkBsEcOqQUC1fZJOESVq3
+
+    JiNC+PT8WR+6W9j3FV9varisF9lgIjGUu2zZZOeQkanqUULdbuF6gSsbJ7T0NEBA
+
+    PYLHxmD4xo6S6mulkoXNdokCgYBllG2nbmmeN+PHK5V5mTwcVDzCNe153mMbabVs
+
+    pPlmuljyQgGPzrs1h03dsKZu1ZaoLT/5MTAhRBn7qdVqGfSh9hgteN8eynOL+Ost
+
+    9GEYQRyH/0xswP6weHAVCROjuXArqFhB0g+hvZkkX2wisjLajeI3/xHleq6VzNTu
+
+    wGMhgQKBgDk178oR5HyNxARoOauYN0PqDe2e11UWY79hDecPXUs1NTOukqeGSjgr
+
+    /oz4OtFWgSanmoo0ZXRvZwG+7GtkEx/XumErXhbiZ7AXG4DuLIAD4eJG/z4Wdf7I
+
+    wUumv8z/M12ba19Yyk3sZBDEUmBvD219acfBThSk8N3618VdfP9h
+
+    -----END RSA PRIVATE KEY-----
+
+    '
+props:
+    common:
+        appargs: ''
+        appname: HomeProject
+        arg: ''
+        buildcommands: RUN usermod -a -G gpio torizon
+        buildfiles: ''
+        command: ''
+        devpackages: ''
+        env: ''
+        expose: ''
+        extrapackages: libgpiod2 libgpiod-dev
+        language: dotnet
+        preinstallcommands: ''
+        runtime: dotnet
+        sdkpostinstallcommands: ''
+        sdkpreinstallcommands: ''
+        targetcommands: ''
+        targetfiles: ''
+    debug:
+        arg: 'ARG SSHUSERNAME=#%application.username%#
+
+            '
+    release: {}
+publickey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCat9fM1v1PeA6Cx5pLdt9WUlQnYg8ZNPrRAc64ZmfReVUX3pM8HYLZ+373k8E09cjEHbRu4F65mt0RkKzuAqivu6tnoUVHWlDbjqYxsHBAejiFyNBNAllkhGAoLSoqoq4JsEgTTXjYRpIaw0yJmuiB6V5htfBhbW6JSomjcN/BDGFMmBCjPb2dPAsJrVSJI8qg66irkBFUmD1bOI/k8Y+OZIVJ+mqoX8wnCGMVKizsx3WJ7jgClVcShCPqGu9GZdg1vt1yufdCzafEuDLmXFvqfV1uErnuRyxbo4yzWvOgVWuPAgRr999GEuJjIM3dXoRkiB+vvpGqNiaczJJCPd/n
+sdkimages:
+    debug: ''
+    release: ''
+sdkimagetags:
+    debug: ''
+    release: ''
+sdksshaddress:
+    debug: null
+    release: null
+shutdownscript:
+    common: ''
+    debug: ''
+    release: ''
+startupscript:
+    common: ''
+    debug: ''
+    release: ''
+username: torizon
+volumes:
+    common: {}
+    debug:
+        /home/torizon/HomeProject: /HomeProject,rw
+    release: {}
